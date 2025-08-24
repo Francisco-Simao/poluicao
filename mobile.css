@@ -14,35 +14,20 @@
 }
 
 body {
-    background-color: #0054a4;
+   /* background-color: #0054a4;*/
     font-family: var(--fonte);
+    background: linear-gradient(180deg, #002B5B, #001A33 );
 }
 
 html {
     scroll-behavior: smooth ;
 }
 
-ul {
+header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    list-style: none;
-    color: #97e6fe;
-    font-size: larger;
-    background-color: #0075e3;
-    height: 40px;
-    border-radius: 20px;
-    margin: 10px 5px;
-}
-
-li:hover {
-    color: #4ea1ef;
-    transition: color .2s;
-}
-
-ul > a {
-    text-decoration: none;
-    color: #97e6fe;
+    
 }
 
 #hed {
@@ -51,29 +36,29 @@ ul > a {
     justify-content: space-around;
     flex-direction: column;
     gap: 10px;
-    
 }
 
+
 h1 {
-    margin: 10px;
+    margin: 5px 10px;
     text-align: center;
-    color: var(--cor-da-letra-principal);
+    color: white;
 }
 
 #hed > p {
     text-align: center;
     font-size: larger;
-    color: var(--cor-da-letra-segundario);
-    margin: 10px;
+    color: #99ccee;
+    margin: 5px 10px;
 }
 
 #button {
     width: 40vw;
     padding: 10px;
     background-color: transparent;
-    border: dashed #0075e3;
+    border: solid #0075e3;
     border-radius: 20px;
-    color: #ffbc99;
+    color: white;
     font-weight: 400;
     font-size: x-large;
     font-family: var(--fonte);
@@ -81,16 +66,67 @@ h1 {
 }
 
 #button:hover {
-    color: #f58d55;
-    border: dashed #015db4;
+    color: #ffbc99;
+    border: solid #015db4;
     transition: .10s ease;
 }
 
 #img {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}   
+
+img {
+    width: 90%;
+    height: 90%;
+    animation: flutuar 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 25px rgba(0, 191, 255, 0.6));
+
+}
+
+@keyframes brilho {
+    0%, 100% { box-shadow: 0 0 20px rgba(0, 191, 255, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(0, 191, 255, 0.7); }
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+nav {
+    width: 90%;
+    margin-top: 20px;
+    background-color: #00428d;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
+}
+
+ul {
+
     width: 100%;
-    height:800px ;
-    background: url(854518-hd-1280-720-30fps-unscreen.gif) no-repeat  center center  ;
-    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+
+ul > a {
+    list-style: none;
+    text-decoration: none;
+}
+
+a > li {
+    color: white;
+}
+
+a > li:hover {
+    color: #0075e3;
+    transition: color .3s;
 }
 
 main {
@@ -105,7 +141,9 @@ section {
     flex-direction: column;
     width: 100%;
     height: 80%;
+    padding: 10% 0;
 }
+
 
 #titulo-agua  {
     display: flex;
@@ -118,6 +156,7 @@ section {
 
 #titulo-agua   > h1 {
     font-size: xx-large;
+    
 }
 
 #titulo-agua   > p {
@@ -151,18 +190,18 @@ section {
 }
 
 .agua-2 {
-    color: #ffbc99;
+    color: white;
     background-color: #0265c1;
 }
 
 .agua-3 {
     color: #ffd7c2;
-    background-color: #0075e3;
+    background-color: #015db4;
 }
 
 .terra-2 {
     background-color: #8D6E63;
-    color: #FFEBE0;
+    color: white;
 }
 
 .terra-3 {
@@ -184,7 +223,7 @@ section {
 }
     
 .accordion-header {
-    padding: 15px;
+    padding: 3%;
     cursor: pointer;
     font-size: 18px;
     display: flex;
@@ -212,4 +251,77 @@ section {
     transform: rotate(180deg);
 } 
 
+section#ong {
+    display: flex;
+    flex-direction: column;
+}
+section#ong  img {
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
 
+div#text-ong {
+    margin: 0 10px;
+}
+
+section#agua-ong , section#terra-ong , section#ar-ong{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+section#ong h2 {
+    color: white;
+    font-size: x-large;
+}
+
+section#ong p {
+    color: #FFEBE0;
+    font-size: large;
+}
+
+section#ong a {
+    text-decoration: none;
+}
+
+section#ong a > p {
+    color: #1677d1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer a {
+    width: 100%;
+    
+}
+
+footer img {
+    width: 11%;
+    height: 11%;
+    border: 2.3px solid #00428d;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+}
+
+.img-footer {
+    width: 100%;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
