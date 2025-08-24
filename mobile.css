@@ -223,9 +223,9 @@ section {
 }
     
 .accordion-header {
-    padding: 3%;
+    padding: 2%;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -254,12 +254,13 @@ section {
 section#ong {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 section#ong  img {
-    width: 50%;
-    height: 70%;
+    width: 40%;
+    height: 60%;
     border-radius: 20px;
-    margin: 0px 10px;
+    margin: 0px 20px;
 }
 
 div#text-ong {
@@ -297,18 +298,18 @@ footer {
     color: white;
 }
 
-footer a {
-    width: 100%;
-    
+footer a{
+    width: 50px;
+    height: 50px;
 }
 
-footer img {
-    width: 11%;
-    height: 11%;
+#contato img {
+    width: 100%;
+    height: 100%;
     border: 2.3px solid #00428d;
     border-radius: 50%;
     padding: 10px;
-    background-color: white;
+
 }
 
 .img-footer {
@@ -324,4 +325,16 @@ footer img {
     width: 100%;
     flex-direction: column;
     align-items: center;
+}
+
+#desen img {
+    width: 50px;
+    height: 50px;
+    border: 2.3px solid #00428d;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+footer img:hover {
+    background-color: #1677d1;
 }
